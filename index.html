@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Khairunnisa Ramadhani Az Zahra</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body onload="welcomeMessage()">
+
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo">
+      <img src="image/Logo.jpg" alt="Logo UNJ">
+      <span>Universitas Negeri Jakarta</span>
+    </a>
+    <nav>
+      <a href="#about-section">Home</a>
+      <a href="#campus-section">Our Campus</a>
+      <a href="#information-section">Massage Us</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+<section id="Home-section" class="Home-section">
+  <!-- Username akan muncul di sini -->
+  <div class="text">
+    <h1>Hai <span id="username"></span>! Welcome To Website</h1>
+    <p>
+      Universitas Negeri Jakarta (UNJ) adalah perguruan tinggi negeri yang berlokasi di Jakarta Timur, Indonesia. Awalnya berdiri sebagai Institut Keguruan dan Ilmu Pendidikan (IKIP) Jakarta pada tahun 1964, kemudian pada tahun 1999 berubah status menjadi universitas. UNJ dikenal sebagai kampus yang fokus pada pengembangan bidang pendidikan dan kependidikan, namun kini juga membuka berbagai program studi non-kependidikan seperti ekonomi, teknik, dan ilmu sosial. Universitas ini memiliki visi menjadi universitas bereputasi di Asia, dengan keunggulan dalam pendidikan, penelitian, serta pengabdian kepada masyarakat.
+    </p>
+  </div>
+  <div class="image">
+    <img src="image/Home.jpg" alt="Home"/>
+  </div>
+</section>
+
+  <!-- Campus -->
+  <section id="campus-section" class="campus-section">
+    <h2>Our Campus</h2>
+    <div class="campus-grid">
+      <div class="campus-item">
+        <img src="image/Kampus A.jpg" alt="Campus A Rawamangun"/>
+        <p>Campus A-Rawamangun</p>
+      </div>
+      <div class="campus-item">
+        <img src="image/Kampus B.jpg" alt="Campus B Pemuda"/>
+        <p>Campus B-Pemuda</p>
+      </div>
+      <div class="campus-item">
+        <img src="image/Kampus D.jpg" alt="Campus D Halimun"/>
+        <p>Campus D-Halimun</p>
+      </div>
+      <div class="campus-item">
+        <img src="image/Kampus E.jpg" alt="Campus E Setia Budi"/>
+        <p>Campus E-Setia Budi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Information -->
+  <main id="information-section" class="information">
+    <h1>Information</h1>
+    <div class="information-section">
+      <div class="message-us">
+        <h2>Message Us</h2>
+        <form onsubmit="event.preventDefault(); validateForm();">
+          <label for="name">Nama</label>
+          <input type="text" id="name" placeholder="Tulis Nama Anda..."/>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Masukkan Email"/>
+
+          <label for="message">Comment</label>
+          <textarea id="message" rows="5" placeholder="Tulis komentar Anda di sini..."></textarea>
+
+          <input type="submit" value="Kirim"/>
+        </form>
+      </div>
+      <div class="contact-us">
+        <img src="image/Kontak.jpg" alt="Contact"/>
+        <h2>Contact</h2>
+        <p>Instagram: @unj_official</p>
+        <p>Tiktok: @unj_official</p>
+        <p>Youtube: @unj_official</p>
+        <p>Telepon: (021) 4898486</p>
+        <br/>
+        <p>
+          Jam Kerja:<br>
+          Senin–Jumat, 08.00–16.00 WIB<br>
+          Sabtu, Minggu & Tanggal Merah Tutup
+        </p>
+        <br/>
+        <p>
+            Alamat Kami:</br>
+            Jl. Rawamangun Muka, RT.11/RW14, 
+            Rawamangun, Pulo Gadung, Jakarta Timur, 
+            Daerah Khusus Jakarta, 13320
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Link ke file JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
