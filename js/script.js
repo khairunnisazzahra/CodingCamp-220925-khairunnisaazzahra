@@ -26,7 +26,7 @@ function validateForm() {
         /// Jika ada field kosong, tampilkan alert
         alert("Harap isi semua field!");
     } else {
-        /// Jika semua field terisi, tampilkan pesan sukses
+        /// Jika semua field terisi, maka tampilkan pesan sukses
         alert(`Terima kasih, ${name}! Form berhasil dikirim.`);
     }
 }
